@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, font, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;
+            vertical-align: baseline;
+        }
+        .clearfix:before,
+        .clearfix:after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                            visibility: hidden;
+                            line-height: 0;
+                            height: 0;
+                            font-size:0;
+        }
+
+        .clearfix { *zoom:1;}
+        ul,li{list-style-type: none;}
+        a{text-decoration: none;text-align: center;}
+
+        .banner{
+            width: 1200px;
+            height: 260px;
+            margin: 40px auto 0 auto;
+        }
+        .pic{
+            width: 200px;
+            height: 260px;
+            float: left;
+            background-position: center;
+            cursor: pointer;
+            transition: width 0.5s;
+        }
+        .mask{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0);
+            opacity: 0.2;
+        }
+        .banner .pic:nth-child(1){
+            background-image: url(./images/ifold1.jpg);
+        }
+        .banner .pic:nth-child(2){
+            background-image: url(./images/ifold2.jpg);
+        }
+        .banner .pic:nth-child(3){
+            background-image: url(./images/ifold3.jpg);
+        }
+        .banner .pic:nth-child(4){
+            background-image: url(./images/ifold4.jpg);
+        }
+        .banner .pic:nth-child(5){
+            background-image: url(./images/ifold5.jpg);
+        }
+        .banner .pic:nth-child(6){
+            background-image: url(./images/ifold6.jpg);
+        }
+    </style>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/shoufengqin.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="pic">
+            <div class="mask"></div>
+        </div>
+        <div class="pic">
+            <div class="mask"></div>
+        </div>
+        <div class="pic">
+            <div class="mask"></div>
+        </div>
+        <div class="pic">
+            <div class="mask"></div>
+        </div>
+        <div class="pic">
+            <div class="mask"></div>
+        </div>
+        <div class="pic">
+            <div class="mask"></div>
+        </div>
+    </div>
+</body>
+</html>

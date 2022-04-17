@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            margin-top: 100px;
+        }
+        .show{
+            padding: 18px 36px;
+            background-color: #e97730;
+            text-decoration: none;
+            color: #fff;
+            margin-left: 100px;
+        }
+        /* 定位后才有大小 */
+        .show::before{
+            content: '';
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width .5s;
+        }
+        .show::before{
+            background-color: #000;
+        }
+        .show:hover::before{
+            width: 100%;
+            left: 0;
+        }
+        .show span{
+            /* 加了定位，但没有移动，方便添加z-index */
+            position: relative; 
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a class="show" href="#">
+            <span>Show Now</span>
+        </a>
+    </div>
+</body>
+</html>
